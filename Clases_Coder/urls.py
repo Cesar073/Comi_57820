@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from Clases_Coder.views import saludo, alejandro, dia_de_hoy, probando_template
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('saludo/', saludo),
+    path('alejo/', alejandro),
+    path('dia/<dia_personalizado>', dia_de_hoy),
+    path('probando_template/', probando_template),
 ]
